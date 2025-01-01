@@ -10,7 +10,8 @@ class HalfTop extends HTMLElement{
         position: relative;
         width: var(--container-width);
         height: var(--half-height);
-        background-color: green;
+        // background-color: green;
+        border-radius: 20px 20px 0 0;
       }
 
       .container{
