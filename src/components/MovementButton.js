@@ -42,7 +42,7 @@ class MovementButton extends HTMLElement{
         width: 90%;
         height: 90%;
         background-color: black;
-        clip-path: polygon(40% 40%, 50% 10%, 60% 40%, 90% 50%, 60% 60%, 50% 90%, 40% 60%, 10% 50%, 40% 40%, 40% 60%, 60% 60%, 60% 40%);
+        clip-path: polygon(40% 40%, 50% 20%, 60% 40%, 80% 50%, 60% 60%, 50% 80%, 40% 60%, 20% 50%, 40% 40%, 40% 60%, 60% 60%, 60% 40%);
       }
     `;
   }

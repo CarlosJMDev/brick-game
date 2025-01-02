@@ -1,5 +1,6 @@
 import './MovementButton';
 import './RotateButton';
+import './MenuButtons';
 class HalfBottom extends HTMLElement{
   constructor(){
     super();
@@ -58,6 +59,7 @@ class HalfBottom extends HTMLElement{
     <style>${HalfBottom.styles}</style>
     <div class="container">
       <div class="menu">
+      <menu-buttons></menu-buttons>
       </div>
       <div class="movement-buttons">
         <movement-button></movement-button>

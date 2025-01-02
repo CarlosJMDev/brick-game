@@ -14,9 +14,13 @@ class BrickGameConsole extends HTMLElement{
         --half-height: 300px;
         --mid-height: 100px;
 
+        --menu-button-size: 20px;
         --movement-button-size: 28px;
+        --rotate-button-size: 50px;
 
+        --background-color-lighten: #6296ff;
         --background-color: #2d73fe;
+        --background-color-darken: #1d61e9;
         --button-color: #f0c800;
 
       }
@@ -30,6 +34,7 @@ class BrickGameConsole extends HTMLElement{
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        box-shadow: 0 3px 3px 1px var(--background-color-darken), 0 2px 10px 2px var(--background-color-lighten) inset, 0 -1px 2px 1px var(--background-color-darken);
       }
 
       .mid{
@@ -39,7 +44,7 @@ class BrickGameConsole extends HTMLElement{
         // border-radius: 10px 5px 10px 5px / 10px 5px 10px 5px;
         
         border-radius: 20px 20px 15px 15px;
-        box-shadow: 0 3px 3px 1px black, 0 2px 10px white inset, 0 -1px 0px 0px gray;
+        box-shadow: 0 3px 3px 1px var(--background-color-darken), 0 2px 10px 2px var(--background-color-lighten) inset, 0 -1px 0px 0px var(--background-color-darken);
       }
     `
   }
