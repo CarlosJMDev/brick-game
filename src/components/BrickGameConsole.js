@@ -5,6 +5,7 @@ class BrickGameConsole extends HTMLElement{
     super();
     this.attachShadow({mode: 'open'});
   }
+  
   static get styles() {
     return /* css */ `
       :host{
@@ -22,7 +23,7 @@ class BrickGameConsole extends HTMLElement{
         --background-color: #2d73fe;
         --background-color-darken: #1d61e9;
         --button-color: #f0c800;
-
+        --white-color: #d8d8d8;
       }
 
       .container{
@@ -40,11 +41,11 @@ class BrickGameConsole extends HTMLElement{
       .mid{
         height: var(--mid-height);
         width: 100%;
-        // background-color: black;
-        // border-radius: 10px 5px 10px 5px / 10px 5px 10px 5px;
-        
         border-radius: 20px 20px 15px 15px;
-        box-shadow: 0 3px 3px 1px var(--background-color-darken), 0 2px 10px 2px var(--background-color-lighten) inset, 0 -1px 0px 0px var(--background-color-darken);
+        box-shadow: 0 3px 6px 1px var(--background-color-darken), 
+                    0 4px 10px 4px var(--background-color-lighten) inset,
+                    0 -1px 3px 0px var(--background-color-darken),
+                    -2px 0px 6px 2px var(--background-color-lighten) inset;
       }
     `
   }

@@ -16,6 +16,7 @@ class RotateButton extends HTMLElement{
         border-radius: 50%;
         background-color: var(--button-color);
         box-shadow: 1px 3px 3px 1px black;
+        cursor: pointer;
       }
 
       .text,
